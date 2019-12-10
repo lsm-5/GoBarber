@@ -31,7 +31,7 @@ Quando a classe App for chamada, o método constructor vai ser executado automat
 Onde vai ser criado o servidor
 
 - importar o App()
-  app.listen(3030);
+  app.listen(3000);
 
 #### routes.js
 
