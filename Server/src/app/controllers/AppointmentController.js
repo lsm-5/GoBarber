@@ -61,6 +61,11 @@ class AppointmentController {
         .json({ error: 'You can only create appointments with providers' });
     }
 
+    //verifica se o usuário e o provedor são duas pessoas diferentes
+    if (provider_id === req.userId) {
+      return res.status(401).json({ error: 'Match between user and provider' });
+    }
+
     // verifica se a data não já passou
     const hourStart = startOfHour(parseISO(date));
     if (isBefore(hourStart, new Date())) {
