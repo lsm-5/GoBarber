@@ -6,7 +6,7 @@ import Dashboard from '../pages/Dashboard';
 import Profile from '../pages/Profile';
 
 import SignIn from '../pages/SignIn';
-import SignUP from '../pages/SingUp';
+import SignUP from '../pages/SignUp';
 
 export default function Routes() {
   return (
