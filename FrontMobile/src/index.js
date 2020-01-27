@@ -1,10 +1,10 @@
 import React from 'react';
-import { View } from 'react-native';
-import './config/ReactotronConfig';
+import 'react-native-gesture-handler';
+
+import Routes from '~/routes';
 
 // import { Container } from './styles';
-console.tron.log('Hello Programmer');
 
 export default function src() {
-  return <View />;
+  return <Routes />;
 }
